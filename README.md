@@ -1,5 +1,5 @@
 # nginx-php-fpm
-use nginx + php-fpm to build the basic http(s) server 
+use nginx + php-fpm to create the basic http(s) server
 
 ## how to use
 
