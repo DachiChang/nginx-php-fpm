@@ -11,6 +11,7 @@ RUN apt update && apt install -y \
     php7.2-mysql \
  && rm -rf /var/lib/apt/lists/*
 # config nginx
+RUN mkdir -p /etc/nginx/ssl
 COPY nginx-config/default_server /etc/nginx/sites-available/default
 # setup the applicatoin environment
 WORKDIR /app
