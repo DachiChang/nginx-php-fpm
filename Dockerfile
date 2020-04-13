@@ -16,6 +16,6 @@ COPY nginx-config/default_server /etc/nginx/sites-available/default
 # setup the applicatoin environment
 WORKDIR /app
 # export network port for access
-EXPOSE 80
+EXPOSE 80 443
 # start php-fpm service and binding nginx as the foreground process
 CMD service php7.2-fpm start && nginx -g "daemon off;"
