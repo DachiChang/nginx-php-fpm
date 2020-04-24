@@ -11,7 +11,7 @@ server {
         ssl_certificate /etc/nginx/ssl/site.crt;
         ssl_certificate_key /etc/nginx/ssl/site.key;
 
-        root /app;
+        root /app/public;
         index index.php index.html index.htm;
 
         location / {
